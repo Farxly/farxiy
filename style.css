@@ -1,0 +1,28 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body,#app{height:100%}
+body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#e6eef8; background:#05010a; overflow:auto}
+.container{position:relative;z-index:5;max-width:1000px;margin:48px auto;padding:24px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.04);border-radius:16px;padding:20px;display:flex;gap:18px;align-items:center}
+.avatar{width:120px;height:120px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,0.06)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.profile-info h1{font-size:20px;margin-bottom:6px}
+.profile-info p{opacity:0.85;font-size:14px}
+.tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.tag{padding:6px 10px;border-radius:999px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));font-size:13px;border:1px solid rgba(255,255,255,0.03)}
+section{margin-top:18px;padding:18px;border-radius:12px}
+.glass{background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+h2{font-size:16px;margin-bottom:8px}
+p,li{font-size:14px;line-height:1.5;color:#d9e6ff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.project{padding:12px;border-radius:10px;position:relative;overflow:hidden;cursor:pointer}
+.project .line{height:2px;background:linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3));margin-top:6px;border-radius:1px;transition:all 0.3s;}
+.project.pending{opacity:0.7;filter:blur(0.5px)}
+.project.pending:hover{opacity:0.9;filter:blur(0)}
+.contact{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;font-weight:600;border:0;cursor:pointer;text-decoration:none}
+.btn-wa{background:linear-gradient(90deg,#1eb954,#128c47);color:#04210b}
+.btn-tt{background:linear-gradient(90deg,#ff2d55,#7a2be2);color:white}
+footer{margin-top:18px;text-align:center;opacity:0.7;font-size:13px}
+.quick-nav{position:fixed;right:18px;bottom:18px;z-index:20;display:flex;flex-direction:column;gap:10px}
+.quick-nav a{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);backdrop-filter:blur(6px)}
+#liveClock{position:fixed;top:12px;right:18px;font-size:14px;font-weight:600;opacity:0.8;color:#fff;z-index:25;}
